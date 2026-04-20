@@ -50,17 +50,6 @@ The user-facing API backend for the EaseOps progressive web app (PWA) e-library 
    pip install -r requirements.txt
    ```
 
-4. **Environment Variables**
-   Create a `.env` file in the root directory:
-
-   ```env
-   SUPABASE_URL=
-   SUPABASE_KEY=
-   JWT_SECRET=
-   JWT_ALGORITHM=HS256
-   ACCESS_TOKEN_EXPIRE_MINUTES=60
-   REFRESH_TOKEN_EXPIRE_DAYS=7
-   ```
 
 ## Running the Server
 
