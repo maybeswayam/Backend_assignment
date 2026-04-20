@@ -97,22 +97,14 @@ FastAPI autogenerates interactive API documentation. Once the server is running,
 
 ### Reading
 
-| Method | Route | Description | Auth Required |
-| --- | --- | --- | --- |
-| `POST` | `/reading/bookmarks` | Add a bookmark for an e-book | Yes |
-| `GET` | `/reading/bookmarks` | Get user bookmarks (requires `?ebook_id=`) | Yes |
-| `DELETE` | `/reading/bookmarks/{id}` | Remove a bookmark | Yes |
-| `POST` | `/reading/notes` | Add a note to a specific page | Yes |
-| `GET` | `/reading/notes` | Get user notes (requires `?ebook_id=`) | Yes |
-| `DELETE` | `/reading/notes/{id}` | Remove a note | Yes |
-
-### Interactions
-
 | Method | Route | Description |
-| --- | --- | --- | --- |
-| `POST` | `/interactions/feedback` | Submit feedback or contact request |
-| `POST` | `/interactions/surveys` | Submit JSON responses to a survey |
-| `GET` | `/interactions/faqs` | Fetch a list of FAQs |
+| --- | --- | --- |
+| `POST` | `/reading/bookmarks` | Add a bookmark for an e-book |
+| `GET` | `/reading/bookmarks` | Get user bookmarks (requires `?ebook_id=`) |
+| `DELETE` | `/reading/bookmarks/{id}` | Remove a bookmark |
+| `POST` | `/reading/notes` | Add a note to a specific page |
+| `GET` | `/reading/notes` | Get user notes (requires `?ebook_id=`) |
+| `DELETE` | `/reading/notes/{id}` | Remove a note |
 
 ## Database Tables
 
