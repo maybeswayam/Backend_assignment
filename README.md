@@ -72,28 +72,28 @@ FastAPI autogenerates interactive API documentation. Once the server is running,
 
 ### Auth
 
-| Method | Route | Description | Auth Required |
-| --- | --- | --- | --- |
-| `POST` | `/auth/register` | Register a new user and generate initial tokens | No |
-| `POST` | `/auth/login` | Authenticate user and return access & refresh tokens | No |
-| `POST` | `/auth/refresh` | Validate refresh token and return a new access token | No |
+| Method | Route | Description |
+| --- | --- | --- |
+| `POST` | `/auth/register` | Register a new user and generate initial tokens |
+| `POST` | `/auth/login` | Authenticate user and return access & refresh tokens |
+| `POST` | `/auth/refresh` | Validate refresh token and return a new access token |
 
 ### Users
 
-| Method | Route | Description | Auth Required |
-| --- | --- | --- | --- |
-| `GET` | `/users/me` | Fetch the current logged-in user's profile | Yes |
-| `PATCH` | `/users/me` | Update name or email | Yes |
-| `PATCH` | `/users/preferences` | Update UI preferences (e.g., dark mode) | Yes |
+| Method | Route | Description |
+| --- | --- | --- |
+| `GET` | `/users/me` | Fetch the current logged-in user's profile |
+| `PATCH` | `/users/me` | Update name or email |
+| `PATCH` | `/users/preferences` | Update UI preferences (e.g., dark mode) |
 
 ### Library
 
-| Method | Route | Description | Auth Required |
-| --- | --- | --- | --- |
-| `GET` | `/library/ebooks` | List all e-books, supports `?category=` and `?tag=` | No |
-| `GET` | `/library/ebooks/{id}` | Get single e-book details incl. file/cover URL | No |
-| `GET` | `/library/search` | Search by title or metadata via `?q=` | No |
-| `GET` | `/library/categories` | List all unique categories | No |
+| Method | Route | Description |
+| --- | --- | --- |
+| `GET` | `/library/ebooks` | List all e-books, supports `?category=` and `?tag=` |
+| `GET` | `/library/ebooks/{id}` | Get single e-book details incl. file/cover URL |
+| `GET` | `/library/search` | Search by title or metadata via `?q=` |
+| `GET` | `/library/categories` | List all unique categories |
 
 ### Reading
 
@@ -108,11 +108,11 @@ FastAPI autogenerates interactive API documentation. Once the server is running,
 
 ### Interactions
 
-| Method | Route | Description | Auth Required |
+| Method | Route | Description |
 | --- | --- | --- | --- |
-| `POST` | `/interactions/feedback` | Submit feedback or contact request | Yes |
-| `POST` | `/interactions/surveys` | Submit JSON responses to a survey | Yes |
-| `GET` | `/interactions/faqs` | Fetch a list of FAQs | No |
+| `POST` | `/interactions/feedback` | Submit feedback or contact request |
+| `POST` | `/interactions/surveys` | Submit JSON responses to a survey |
+| `GET` | `/interactions/faqs` | Fetch a list of FAQs |
 
 ## Database Tables
 
